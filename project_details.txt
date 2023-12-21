@@ -1,0 +1,10 @@
+Create three instaces:
+1.Jenkins : Install Jenkins
+            Add git webhook
+2.SonarQube : Add inbound rule port 9000.
+              Install SonarQube
+              --> wget link of zip file
+              --> apt install unzip
+              --> unzip SonarQube zip file
+              --> cd-sonarqube/bin/linux
+              --> 
