@@ -7,4 +7,10 @@ Create three instaces:
               --> apt install unzip
               --> unzip SonarQube zip file
               --> cd-sonarqube/bin/linux
-              --> 
+              --> ./sonar.sh console
+      Login to SonarQube platform set token copy the key and text as well.
+      Go to Jenkins install Plugins SonarQube Scanner and SSH2 Easy.
+      Manage Jenkins --> Tools --> SonarQube Scanner installations --> Add.
+      Manage Jenkins --> Config System --> Add Sonar Server copy paste the url of SonarQube.
+      Add Sonar Token using secret text --> Config item --> add build step -->
+      add sonarqube scanner --> Analysis properties --> paste the key link of Sonar.
