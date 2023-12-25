@@ -1,16 +1,25 @@
-Create three instaces:
-1.Jenkins : Install Jenkins
-            Add git webhook
-2.SonarQube : Add inbound rule port 9000.
+Create two instaces: Use t2-medium instead of t2-micro(free-tier).
+
+1.SonarQube : Add inbound rule port 9000.
+              
               Install SonarQube
               --> wget link of zip file
               --> apt install unzip
               --> unzip SonarQube zip file
               --> cd-sonarqube/bin/linux
               --> ./sonar.sh console
-      Login to SonarQube platform set token copy the key and text as well.
-      Go to Jenkins install Plugins SonarQube Scanner and SSH2 Easy.
-      Manage Jenkins --> Tools --> SonarQube Scanner installations --> Add.
-      Manage Jenkins --> Config System --> Add Sonar Server copy paste the url of SonarQube.
-      Add Sonar Token using secret text --> Config item --> add build step -->
-      add sonarqube scanner --> Analysis properties --> paste the key link of Sonar.
+              --> Login to SonarQube platform set token copy the key and text as well.
+
+2.Jenkins : Install Jenkins
+            Add git webhook
+      
+            -->Go to Jenkins install Plugins SonarQube Scanner and SSH2 Easy.
+      
+            -->Manage Jenkins --> Tools --> SonarQube Scanner installations --> Add.
+
+            -->Manage Jenkins --> Config System --> Add Sonar Server copy paste the url of SonarQube.
+
+            -->Add Sonar Token using secret text --> Config item --> add build step -->
+               add sonarqube scanner --> Analysis properties --> paste the key link of Sonar.
+             
+            --> Now build the project it will run successfully.
